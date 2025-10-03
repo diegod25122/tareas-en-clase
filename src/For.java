@@ -12,5 +12,5 @@ public class For {
             System.out.println(+num+" * "+i+" = "+resultado);
         }
     }
-//xdsas
+
 }
