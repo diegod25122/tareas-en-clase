@@ -1,21 +1,26 @@
 import java.util.Scanner;
+
 public class Comandos {
     public static void main(String[] args) {
-        String usuario ="diegouu2512";
-        String contrasenia = "251220004";
-        String user,password;
+        String usuario ="Diego";
+        String contrasenia ="Camacho";
+        String user, password;
+
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Ingrese su usuario: ");
-        user = entrada.nextLine();
-        System.out.println("Ingrese un contraseña: ");
-        password = entrada.nextLine();
-        //System.out.println(usuario==(usuario)); //equal para cadenas, == para numeros
-        if(user.equals(usuario) && password.equals(contrasenia)){
+        System.out.print("Ingrese su usuario: ");
+        user = entrada.nextLine().trim();
+
+        System.out.print("Ingrese una contraseña: ");
+        password = entrada.nextLine().trim();
+
+
+        if (user.equals(usuario) && password.equals(contrasenia)) {
             System.out.println("Acceso concedido");
-        }else{
-            System.out.println("Usuario no valido");
+        } else {
+            System.out.println("Usuario no válido");
         }
 
+        entrada.close();
     }
 }
