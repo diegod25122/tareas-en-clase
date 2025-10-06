@@ -19,10 +19,6 @@ public class Jugador {
     //los objetos
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
-        Jugador objeto1 = new Jugador("Lionel Messi", "Delantero", 38, 10);
-        Jugador objeto2 = new Jugador("Cristiano Ronaldo","Delantero", 40,7);
-        objeto1.mostrar();
-        objeto2.mostrar();
         System.out.println("Ingrese los datos del tercer jugador: \n");
         System.out.println("Nombre: ");
         String nombre = sc.nextLine();
@@ -33,6 +29,10 @@ public class Jugador {
         System.out.println("Dorsal: ");
         int dorsal = sc.nextInt();
         //creamos el 3 jugador
+        Jugador objeto1 = new Jugador("Lionel Messi", "Delantero", 38, 10);
+        Jugador objeto2 = new Jugador("Cristiano Ronaldo","Delantero", 40,7);
+        objeto1.mostrar();
+        objeto2.mostrar();
         Jugador objeto3 = new Jugador(nombre, posicion, edad, dorsal);
         objeto3.mostrar();
     }
