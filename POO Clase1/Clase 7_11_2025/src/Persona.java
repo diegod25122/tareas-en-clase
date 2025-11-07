@@ -22,7 +22,7 @@ public class Persona {
             super(cedula, nombre, edad); // super llama al metodo constructor de la clase padre y solo se inicializa el atributo agregado en la clase hija
             this.codigo = codigo;
         }
-                       // @Overide con override nos dice que estamos sobrescribiendo
+                       // @Overide con override nos dice que estamos sobrescribiendo nos sirve cuando queremos heredar una clase padre sus atributos a su clase hijo imprimir con el mismo nombre de metodo
         public void ImprimirEstudiante() {
             super.Imprimir();
             System.out.println("El codigo del estudiante es: "+codigo);
