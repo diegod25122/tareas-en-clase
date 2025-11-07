@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/POO Clase1/Clase 7_11_2025/Clase 7_11_2025.iml" filepath="$PROJECT_DIR$/POO Clase1/Clase 7_11_2025/Clase 7_11_2025.iml" />
       <module fileurl="file://$PROJECT_DIR$/Comandos basicos.iml" filepath="$PROJECT_DIR$/Comandos basicos.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO Clase1/POO Clase1.iml" filepath="$PROJECT_DIR$/POO Clase1/POO Clase1.iml" />
     </modules>
