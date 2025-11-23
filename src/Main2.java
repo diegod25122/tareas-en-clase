@@ -3,7 +3,7 @@ public class Main2 {
         //mostramos las reglas generales
         SolicitanteBeca.mostrarReglasBeca();
         //CREAMOS SOLICITANTE
-        SolicitanteBeca s1 = new SolicitanteBeca("Diego Camacho", "172638611", 9.0,850.0, true);
+        SolicitanteBeca s1 = new SolicitanteBeca();
 
         //generamos resultado de la beca
         s1.generarResultados();

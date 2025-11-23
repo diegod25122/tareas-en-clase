@@ -1,11 +1,26 @@
 //package ec.gob.beca.modelo;
+import java.sql.SQLOutput;
+import java.util.Scanner;
 public class SolicitanteBeca {
     private String nombreCompleto;
     private String cedula;
     private double promedio;
     private double ingresosFamiliares;
     private boolean tieneRecomendacion;
-    public SolicitanteBeca(String nombreCompleto, String cedula, double promedio, double ingresosFamiliares, boolean tieneRecomendacion) {
+
+    //constructor
+    public SolicitanteBeca(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del completo: ");
+        nombreCompleto = sc.nextLine();
+        System.out.println("Ingrese la cedula: ");
+        cedula = sc.nextLine();
+        System.out.println("Ingrese su promedio: ");
+        promedio = sc.nextDouble();
+        System.out.println("Ingrese sus ingresos familiares: ");
+        ingresosFamiliares = sc.nextDouble();
+        System.out.println("Tiene recomendacion (true/false): ");
+        tieneRecomendacion = sc.nextBoolean();
         setNombreCompleto(nombreCompleto);
         setCedula(cedula);
         setPromedio(promedio);
@@ -14,6 +29,7 @@ public class SolicitanteBeca {
     }
     //metodos
     public String getNombreCompleto() {
+
         return nombreCompleto;
     }
     public void setNombreCompleto(String nombreCompleto){
